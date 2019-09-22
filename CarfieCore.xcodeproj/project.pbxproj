@@ -90,7 +90,7 @@
 		6706A5162333332D001F6496 /* CarfieCoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				6706A5192333332D001F6496 /* Info.plist */,
+				6706A53A2337C30C001F6496 /* Shared */,
 			);
 			path = CarfieCoreTests;
 			sourceTree = "<group>";
@@ -127,6 +127,14 @@
 				6706A52D23333B06001F6496 /* Quick.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6706A53A2337C30C001F6496 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				6706A5192333332D001F6496 /* Info.plist */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

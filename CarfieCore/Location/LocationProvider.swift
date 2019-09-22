@@ -19,7 +19,7 @@ public protocol LocationProvider {
 
 public final class DefaultLocationProvider: NSObject, LocationProvider {
 
-    public static let sharedInstance = DefaultLocationProvider()
+    public static let shared = DefaultLocationProvider()
 
     let locationManager = CLLocationManager()
 
@@ -70,5 +70,9 @@ extension DefaultLocationProvider: CLLocationManagerDelegate {
     public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
         multicastDelegate.notify(withResult: location)
+    }
+
+    public func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        locationManager.stopUpdatingLocation()
     }
 }

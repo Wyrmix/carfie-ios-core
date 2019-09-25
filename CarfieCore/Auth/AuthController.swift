@@ -136,7 +136,7 @@ public final class DefaultAuthController {
 
     // MARK: - Init
 
-    private init(facebookAuthProvider: AuthProvider, googleAuthProvider: GoogleAuthProvider) {
+    init(facebookAuthProvider: AuthProvider, googleAuthProvider: GoogleAuthProvider) {
         self.facebookAuthProvider = facebookAuthProvider
         self.googleAuthProvider = googleAuthProvider
 
@@ -199,11 +199,12 @@ extension DefaultAuthController: AuthProviderDelegate {
         switch result {
         case .success(let provider):
             setCurrentAuthProvider(to: provider)
+            _currentAccessToken = token
         case .cancel, .failure:
-            break
+            _currentAuthProvider = nil
+            _currentAccessToken = nil
         }
 
-        _currentAccessToken = token
         loginDelegate?.authController(self, loginDidCompleteWith: result)
     }
 

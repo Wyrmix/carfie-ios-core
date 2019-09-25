@@ -28,6 +28,9 @@
 		67E1D91B233B2D3500F27A99 /* GoogleAuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E1D91A233B2D3500F27A99 /* GoogleAuthProvider.swift */; };
 		67E1D91D233B2E0500F27A99 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E1D91C233B2E0500F27A99 /* AuthProvider.swift */; };
 		67E1D91F233B304000F27A99 /* FacebookAuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E1D91E233B304000F27A99 /* FacebookAuthProvider.swift */; };
+		67E1D923233BDF5000F27A99 /* MockAuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E1D922233BDF5000F27A99 /* MockAuthProvider.swift */; };
+		67E1D925233BFEB000F27A99 /* AuthControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E1D924233BFEB000F27A99 /* AuthControllerSpec.swift */; };
+		67E1D927233C04B100F27A99 /* AuthValidatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E1D926233C04B100F27A99 /* AuthValidatorSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		67E1D91A233B2D3500F27A99 /* GoogleAuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthProvider.swift; sourceTree = "<group>"; };
 		67E1D91C233B2E0500F27A99 /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
 		67E1D91E233B304000F27A99 /* FacebookAuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookAuthProvider.swift; sourceTree = "<group>"; };
+		67E1D922233BDF5000F27A99 /* MockAuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthProvider.swift; sourceTree = "<group>"; };
+		67E1D924233BFEB000F27A99 /* AuthControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthControllerSpec.swift; sourceTree = "<group>"; };
+		67E1D926233C04B100F27A99 /* AuthValidatorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthValidatorSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,7 @@
 		6706A5162333332D001F6496 /* CarfieCoreTests */ = {
 			isa = PBXGroup;
 			children = (
+				67E1D920233BDEEC00F27A99 /* Auth */,
 				6706A53A2337C30C001F6496 /* Shared */,
 			);
 			path = CarfieCoreTests;
@@ -206,6 +213,24 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
+		67E1D920233BDEEC00F27A99 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				67E1D921233BDEF600F27A99 /* Mocks */,
+				67E1D924233BFEB000F27A99 /* AuthControllerSpec.swift */,
+				67E1D926233C04B100F27A99 /* AuthValidatorSpec.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		67E1D921233BDEF600F27A99 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				67E1D922233BDF5000F27A99 /* MockAuthProvider.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -274,6 +299,7 @@
 					};
 					6706A5112333332D001F6496 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -378,6 +404,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67E1D925233BFEB000F27A99 /* AuthControllerSpec.swift in Sources */,
+				67E1D927233C04B100F27A99 /* AuthValidatorSpec.swift in Sources */,
+				67E1D923233BDF5000F27A99 /* MockAuthProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,13 +614,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GDEYN6H976;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = CarfieCoreTests/Info.plist;
+				INFOPLIST_FILE = CarfieCoreTests/Shared/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -599,6 +629,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.espy.CarfieCoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -608,13 +639,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GDEYN6H976;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = CarfieCoreTests/Info.plist;
+				INFOPLIST_FILE = CarfieCoreTests/Shared/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -13,6 +13,21 @@
 		6706A529233333EF001F6496 /* MulticastNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6706A528233333EF001F6496 /* MulticastNotifier.swift */; };
 		6706A53523333EEB001F6496 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6706A52E23333B06001F6496 /* Nimble.framework */; };
 		6706A53623333EEB001F6496 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6706A52D23333B06001F6496 /* Quick.framework */; };
+		67E1D8D4233827BC00F27A99 /* AuthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E1D8D3233827BC00F27A99 /* AuthValidator.swift */; };
+		67E1D8D62338296100F27A99 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E1D8D52338296100F27A99 /* Result.swift */; };
+		67E1D8D82338337200F27A99 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E1D8D72338337200F27A99 /* AuthController.swift */; };
+		67E1D8F82338581200F27A99 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E1D8F62338581200F27A99 /* FBSDKLoginKit.framework */; };
+		67E1D8F92338581200F27A99 /* FacebookLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E1D8F72338581200F27A99 /* FacebookLogin.framework */; };
+		67E1D8FD233866CF00F27A99 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E1D8FB233866CE00F27A99 /* FBSDKCoreKit.framework */; };
+		67E1D8FE233866CF00F27A99 /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E1D8FC233866CE00F27A99 /* FacebookCore.framework */; };
+		67E1D9022338673E00F27A99 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E1D9002338673E00F27A99 /* FBSDKShareKit.framework */; };
+		67E1D9042338675800F27A99 /* FacebookShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E1D9032338675800F27A99 /* FacebookShare.framework */; };
+		67E1D9112338746600F27A99 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E1D90F2338746500F27A99 /* GoogleSignIn.framework */; };
+		67E1D9122338746600F27A99 /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E1D9102338746600F27A99 /* GoogleSignInDependencies.framework */; };
+		67E1D9142338747D00F27A99 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 67E1D9132338747D00F27A99 /* GoogleSignIn.bundle */; };
+		67E1D91B233B2D3500F27A99 /* GoogleAuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E1D91A233B2D3500F27A99 /* GoogleAuthProvider.swift */; };
+		67E1D91D233B2E0500F27A99 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E1D91C233B2E0500F27A99 /* AuthProvider.swift */; };
+		67E1D91F233B304000F27A99 /* FacebookAuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E1D91E233B304000F27A99 /* FacebookAuthProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +50,25 @@
 		6706A528233333EF001F6496 /* MulticastNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastNotifier.swift; sourceTree = "<group>"; };
 		6706A52D23333B06001F6496 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		6706A52E23333B06001F6496 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		67E1D8D3233827BC00F27A99 /* AuthValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthValidator.swift; sourceTree = "<group>"; };
+		67E1D8D52338296100F27A99 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		67E1D8D72338337200F27A99 /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
+		67E1D8D9233835CF00F27A99 /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AccountKit.framework; path = ../../../../Downloads/AccountKit.framework; sourceTree = "<group>"; };
+		67E1D8DC2338368900F27A99 /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AccountKit.framework; path = "../carfie-ios-user/AccountKit.framework"; sourceTree = "<group>"; };
+		67E1D8DF2338377300F27A99 /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AccountKit.framework; path = ManualFrameworks/AccountKit.framework; sourceTree = "<group>"; };
+		67E1D8F62338581200F27A99 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Carthage/Build/iOS/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		67E1D8F72338581200F27A99 /* FacebookLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookLogin.framework; path = Carthage/Build/iOS/FacebookLogin.framework; sourceTree = "<group>"; };
+		67E1D8FB233866CE00F27A99 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Carthage/Build/iOS/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		67E1D8FC233866CE00F27A99 /* FacebookCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookCore.framework; path = Carthage/Build/iOS/FacebookCore.framework; sourceTree = "<group>"; };
+		67E1D8FF2338673E00F27A99 /* FacebookShare.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = FacebookShare.framework.dSYM; path = Carthage/Build/iOS/FacebookShare.framework.dSYM; sourceTree = "<group>"; };
+		67E1D9002338673E00F27A99 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Carthage/Build/iOS/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		67E1D9032338675800F27A99 /* FacebookShare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookShare.framework; path = Carthage/Build/iOS/FacebookShare.framework; sourceTree = "<group>"; };
+		67E1D90F2338746500F27A99 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = ManualFrameworks/GoogleSignIn.framework; sourceTree = "<group>"; };
+		67E1D9102338746600F27A99 /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignInDependencies.framework; path = ManualFrameworks/GoogleSignInDependencies.framework; sourceTree = "<group>"; };
+		67E1D9132338747D00F27A99 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleSignIn.bundle; path = ManualFrameworks/GoogleSignIn.bundle; sourceTree = "<group>"; };
+		67E1D91A233B2D3500F27A99 /* GoogleAuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthProvider.swift; sourceTree = "<group>"; };
+		67E1D91C233B2E0500F27A99 /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
+		67E1D91E233B304000F27A99 /* FacebookAuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookAuthProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +76,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67E1D9112338746600F27A99 /* GoogleSignIn.framework in Frameworks */,
+				67E1D9122338746600F27A99 /* GoogleSignInDependencies.framework in Frameworks */,
+				67E1D9042338675800F27A99 /* FacebookShare.framework in Frameworks */,
+				67E1D9022338673E00F27A99 /* FBSDKShareKit.framework in Frameworks */,
+				67E1D8FD233866CF00F27A99 /* FBSDKCoreKit.framework in Frameworks */,
+				67E1D8FE233866CF00F27A99 /* FacebookCore.framework in Frameworks */,
+				67E1D8F82338581200F27A99 /* FBSDKLoginKit.framework in Frameworks */,
+				67E1D8F92338581200F27A99 /* FacebookLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +103,7 @@
 		6706A4FF2333332D001F6496 = {
 			isa = PBXGroup;
 			children = (
+				67E1D9132338747D00F27A99 /* GoogleSignIn.bundle */,
 				6706A50B2333332D001F6496 /* CarfieCore */,
 				6706A5162333332D001F6496 /* CarfieCoreTests */,
 				6706A50A2333332D001F6496 /* Products */,
@@ -80,6 +123,7 @@
 		6706A50B2333332D001F6496 /* CarfieCore */ = {
 			isa = PBXGroup;
 			children = (
+				67E1D8D22338275900F27A99 /* Auth */,
 				6706A527233333E3001F6496 /* Core */,
 				6706A52423333362001F6496 /* Location */,
 				6706A52323333353001F6496 /* Shared */,
@@ -116,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				6706A528233333EF001F6496 /* MulticastNotifier.swift */,
+				67E1D8D52338296100F27A99 /* Result.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -123,6 +168,18 @@
 		6706A52C23333B06001F6496 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				67E1D90F2338746500F27A99 /* GoogleSignIn.framework */,
+				67E1D9102338746600F27A99 /* GoogleSignInDependencies.framework */,
+				67E1D9032338675800F27A99 /* FacebookShare.framework */,
+				67E1D8FF2338673E00F27A99 /* FacebookShare.framework.dSYM */,
+				67E1D9002338673E00F27A99 /* FBSDKShareKit.framework */,
+				67E1D8FC233866CE00F27A99 /* FacebookCore.framework */,
+				67E1D8FB233866CE00F27A99 /* FBSDKCoreKit.framework */,
+				67E1D8F72338581200F27A99 /* FacebookLogin.framework */,
+				67E1D8F62338581200F27A99 /* FBSDKLoginKit.framework */,
+				67E1D8D9233835CF00F27A99 /* AccountKit.framework */,
+				67E1D8DC2338368900F27A99 /* AccountKit.framework */,
+				67E1D8DF2338377300F27A99 /* AccountKit.framework */,
 				6706A52E23333B06001F6496 /* Nimble.framework */,
 				6706A52D23333B06001F6496 /* Quick.framework */,
 			);
@@ -135,6 +192,18 @@
 				6706A5192333332D001F6496 /* Info.plist */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		67E1D8D22338275900F27A99 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				67E1D8D72338337200F27A99 /* AuthController.swift */,
+				67E1D91C233B2E0500F27A99 /* AuthProvider.swift */,
+				67E1D91E233B304000F27A99 /* FacebookAuthProvider.swift */,
+				67E1D91A233B2D3500F27A99 /* GoogleAuthProvider.swift */,
+				67E1D8D3233827BC00F27A99 /* AuthValidator.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +228,7 @@
 				6706A5052333332D001F6496 /* Sources */,
 				6706A5062333332D001F6496 /* Frameworks */,
 				6706A5072333332D001F6496 /* Resources */,
+				67E1D8FA2338582700F27A99 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -230,6 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67E1D9142338747D00F27A99 /* GoogleSignIn.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +333,29 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
+		67E1D8FA2338582700F27A99 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/FacebookLogin.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSDKLoginKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FacebookCore.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSDKCoreKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FacebookShare.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSDKShareKit.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -270,7 +364,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6706A529233333EF001F6496 /* MulticastNotifier.swift in Sources */,
+				67E1D91B233B2D3500F27A99 /* GoogleAuthProvider.swift in Sources */,
 				6706A526233333AA001F6496 /* LocationProvider.swift in Sources */,
+				67E1D8D82338337200F27A99 /* AuthController.swift in Sources */,
+				67E1D91F233B304000F27A99 /* FacebookAuthProvider.swift in Sources */,
+				67E1D91D233B2E0500F27A99 /* AuthProvider.swift in Sources */,
+				67E1D8D62338296100F27A99 /* Result.swift in Sources */,
+				67E1D8D4233827BC00F27A99 /* AuthValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +528,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/ManualFrameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/CarfieCore/Shared/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -437,6 +538,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.espy.CarfieCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -460,6 +562,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/ManualFrameworks",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/CarfieCore/Shared/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -469,6 +572,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.espy.CarfieCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

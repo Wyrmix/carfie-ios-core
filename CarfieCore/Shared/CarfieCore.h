@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AccountKit/AccountKit.h>
 
 //! Project version number for CarfieCore.
 FOUNDATION_EXPORT double CarfieCoreVersionNumber;

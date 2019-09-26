@@ -6,7 +6,7 @@
 //  Copyright © 2019 espy. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 // MARK: - Protocols
 
@@ -15,7 +15,7 @@ import Foundation
 public protocol AuthController {
 
     /// Delegate for login requests
-    var loginDelegate: AuthControllerDelegate? { get set }
+    var loginDelegate: AuthControllerLoginDelegate? { get set }
 
     /// Delegate for logout requests
     var logoutDelegate: AuthControllerLogoutDelegate? { get set }
@@ -62,7 +62,7 @@ public protocol AuthController {
 // MARK: Delegates
 
 /// Delegate that handles all login requests from the AuthController.
-public protocol AuthControllerDelegate: class {
+public protocol AuthControllerLoginDelegate: class {
 
     /// This function is called upon completion of a provider's login flow.
     ///
@@ -93,7 +93,7 @@ public final class DefaultAuthController {
 
     // MARK: Delegates
 
-    public weak var loginDelegate: AuthControllerDelegate?
+    public weak var loginDelegate: AuthControllerLoginDelegate?
     public weak var logoutDelegate: AuthControllerLogoutDelegate?
 
     // MARK: Controlled Properties
